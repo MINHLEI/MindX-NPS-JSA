@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 50px;
+}
+
+/* Home menu */
+.home-menu{
+    background-image: url(hero.jpg);
+    height: 700px;
+    background-size: cover;
+}
+
+nav{
+    margin-left: 10%;
+}
+
+nav.max-width{
+    display: flex;
+    justify-content: space-around;
+}
