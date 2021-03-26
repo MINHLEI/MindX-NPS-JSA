@@ -1,20 +1,66 @@
 body{
-    background-color: powderblue;
+    background-image:  url(hero.jpg) ;
+    backdrop-filter: brightness(50%);
+    height: 700px;
+    background-size: cover;
+    
 }
+
+
 .container{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    padding-top: 50px;
+    align-items: center;
 }
 .nav-link{
     display: flex;
     list-style: none;
+    
 }
 .nav-link > li > a {
-    margin: 10px;
+    font-family: 'Saira', sans-serif;
+    margin: 50px;
     text-decoration: none;
-    color: black;
+    color: white;
+    text-transform: uppercase;
 }
 .nav-link > li > a:hover{
     color: palevioletred;
+}
+.friendlygreetings{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 70px;
+}
+.messagecontent{
+    list-style: none;
+    
+}
+.messagecontent > li{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 200%;
+    text-decoration: none;
+    color: white;
+}
+.messagebutton{
+    margin-left: 40px;
+    margin-top: 10px ;
+}
+.messagebutton > a{
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;
+    padding: 10px 30px;
+    border-radius: 40px / 100%;
+    
+}
+#one{
+    color: white;
+    background-color: rgb(254, 184, 0);
+    margin-right: 20px;
+}
+#two{
+    color: rgb(254, 184, 0);
+    border: 2px solid rgb(254, 184, 0);
 }
