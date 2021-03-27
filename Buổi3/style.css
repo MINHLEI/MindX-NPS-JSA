@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.nav-link{
+    display: flex;
+    list-style: none;
+}
+.nav-link > li > a {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+}
+
+.nav-link > li > a:hover {
+       color: #898989c2;
+}
+.nav-link > li::before {
+       width: 100%;
+       height: 2px;
+       color: yellow;
+       /* transition: all 0.5s ease-in-out; */
+}
+.test{
+    font-size: 54px;
+     margin: 10px;
+        text-decoration: none;
+        color: black;
+
+}
+.test::before{
+    color: yellow;
+    width: 20px;
+    height: 30px;
+    content: "";
+	display: block;
+}
+.test::after{
+    color: yellow;
+    width: 100%;
+    height: 3px;
+}
+
+.banner{
+    background-image: url('/Buổi2pro/hero.jpg');
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner::before{
+    z-index: 1;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.353);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.nav{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.banner_text{
+    position: absolute;
+    z-index: 30;
+    top: 40%;
+    left: 10%;
+}
+.banner_text > h2 {
+    color: white;
+    font-size: 200%;
+    letter-spacing: 2px;
+}
+.button_group > a{
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;
+    padding: 10px 30px;
+    border-radius: 45px / 100%;
+}
+.btn_hungry{
+    color: white;
+    background-color: rgb(254, 184, 0);
+    border: 2px solid rgb(254, 184, 0);
+    margin-right: 20px;
+}
+.btn_showmore{
+    color: rgb(254, 184, 0);
+    border: 2px solid rgb(254, 184, 0);
+}
+.btn_hungry:hover{
+    background-color: rgb(0, 242, 255);
+    border:2px solid rgb(0, 242, 255) ;
+    color: gray;
+    transition: 0.4s;
+}
+.btn_showmore:hover{
+    background-color: rgb(254, 184, 0);
+    color: white;
+    transition: 0.4s;
+}
